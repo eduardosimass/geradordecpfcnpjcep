@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    
+
+    <title>Gerador CPF e CNPJ</title>
+</head>
+<body>
+    
+    <h1 class=" d-flex justify-content-around align-middle ">Gerador de CPF E CNPJ válidos</h1>
+    <form  class="d-flex justify-content-around" name="form_main ">
+      <label for="numero">Número:</label> 
+      <input name="numero" id="numero" size="20" type="text" /><br />
+      Tipo:
+      <input class="form-check-input" name="tipo" value="cpf" id="cpf" checked="checked" type="radio"> 
+      <label for="cpf">CPF</label>
+      <input class="form-check-input" name="tipo" value="cnpj" id="cnpj" type="radio" /> 
+      <label for="cnpj">CNPJ</label>
+      <input class="form-check-input" name="mascara" value="mascara" id="mascara" type="checkbox"> 
+      <label for="mascara">Máscara</label><br /><br />
+      <input class="btn btn-primary btn-sm name="button" value="Gerar" onclick="gera()" type="button">
+      <input class="btn btn-primary btn-sm type="button" value="Copiar" onclick="copiarTexto()"> 
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
