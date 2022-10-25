@@ -13,10 +13,10 @@
 </head>
 <body>
     
-    <h1 class=" d-flex justify-content-around align-middle ">Gerador de CPF E CNPJ válidos</h1>
-    <form  class="d-flex justify-content-around" name="form_main ">
+    <h1>Gerador de CPF E CNPJ válidos</h1>
+    <form  name="form_main">
       <label for="numero">Número:</label> 
-      <input name="numero" id="numero" size="20" type="text" /><br />
+      <input class="form-control" name="numero" id="numero" size="20" type="text" /><br />
       Tipo:
       <input class="form-check-input" name="tipo" value="cpf" id="cpf" checked="checked" type="radio"> 
       <label for="cpf">CPF</label>
@@ -24,7 +24,7 @@
       <label for="cnpj">CNPJ</label>
       <input class="form-check-input" name="mascara" value="mascara" id="mascara" type="checkbox"> 
       <label for="mascara">Máscara</label><br /><br />
-      <input class="btn btn-primary btn-sm name="button" value="Gerar" onclick="gera()" type="button">
+      <input class="btn btn-primary btn-sm name="button" value="Gerar" onclick="gera()">
       <input class="btn btn-primary btn-sm type="button" value="Copiar" onclick="copiarTexto()"> 
     </form>
 
