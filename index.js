@@ -1,6 +1,8 @@
 let create_array = (total, numero) => Array.from(Array(total), () => number_random(numero));
 let number_random = (number) => (Math.round(Math.random() * number));
 let mod = (dividendo, divisor) => Math.round(dividendo - (Math.floor(dividendo / divisor) * divisor));
+var input = document.querySelector("input");
+input.readOnly = true;
 
 function gera() {
   document.form_main.numero.value = (document.form_main.tipo[0].checked) ? cpf() : cnpj();
